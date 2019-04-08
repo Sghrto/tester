@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="337dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="222dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="25dip"
+        android:paddingEnd="25dip">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/android" />
+
+        <ImageView
+            android:id="@+id/activity_connexion_usb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_usb_black_48dp"
+            android:tint="@color/activity_connexion_status_unplugged" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/arduino" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activity_connexion_status"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/linearLayout"
+        android:text="@string/activity_connexion_status_unplugged"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/activity_connexion_connect"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activity_connexion_connect"
+        android:visibility="invisible"
+        android:layout_below="@+id/linearLayout"/>
+
+</RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_connexion_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/webpiew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:text="Button" />
+    </FrameLayout>
+
+</merge>
